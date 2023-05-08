@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header (HOME AND NAV) */
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(images/home-start.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav image {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    font-weight: 600;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    color: #5591F5;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.1s;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Header (HOME AND NAV) */
+
+
+
+/* About (INFORMATION AND BUTTON) */
+.home-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 305px;
+    margin: 100px 0;
+    font-weight: 700;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.text-container p {
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.home-about-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #5591F5;
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005EFB;
+    color: #fff;
+}
+
+/* About (INFORMATION AND BUTTON) */
+
+
+
+/* Class (INFORMATION AND BUTTON) */
+.home-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 305px;
+    margin: 100px 0;
+    font-weight: 700;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.text-container p {
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.home-class-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #5591F5;
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005EFB;
+    color: #fff;
+}
+
+/* Class (INFORMATION AND BUTTON) */
+
+
+
+/* Top to Page (BUTTON) */
+.top {
+    --offset: 50px;
+
+    position: sticky;
+    left: 1810px;
+    bottom: 30px;
+    margin-top: calc(100vh + var(--offset));
+
+    /* visual styling */
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    background: #5591F5;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Top to Page (BUTTON) */
+
+
+/* Footer (SOCIAL MEDIA LINKS) */
+footer {
+    background-color: #737373;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+footer i {
+    color: white;
+    padding: 100px;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 1rem;
+}
+
+#contact-form {
+    margin: 50px auto;
+    width: 60%;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#contact-form h1 {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#contact-form h4 {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+#contact-form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact-form #failure {
+    color: red;
+    display: none;
+}
+
+#contact-form #success {
+    color: green;
+    display: none;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#contact-form select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border;
+    font-size: 1rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #0077A3;
+}
+
+#contact-form #success,
+#contact-form #failure {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+#contact-form #success {
+    color: #008CBA;
+}
+
+#contact-form #failure {
+    color: #FF4136;
+}
+
+/* Footer (SOCIAL MEDIA LINKS) */
