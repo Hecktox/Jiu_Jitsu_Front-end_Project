@@ -77,6 +77,31 @@ nav ul {
     background-color: transparent;
 }
 
+.map-container {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .map-title {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    top: 0;
+  }
+  
+  .map-container iframe {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 2rem;
+  }
+
+
 #contact-form {
     margin: 50px auto;
     width: 60%;
