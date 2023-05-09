@@ -36,100 +36,124 @@
 </section>
 
 <body>
-    
-    <section id="Calander">
-        <div class="sunday">
-            <div class="date">
-                <h1>Sunday</h1>
-            </div>
+    <section class="cal">
+        <div class="days">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Fruday</div>
+            <div>Saturday</div>
+        </div>
+
+        <div class="block">
             <div class="Capoeira">
                 <p>Capoeira</p>
+                <p>__________________</p>
                 <br>
                 <p>12:00 PM</p>
                 <p>-</p>
                 <p>1:30 PM</p>
             </div>
-        </div>
-
-        <div class="monday">
-            <div class="date">
-                <h1>Monday</h1>
-            </div>
-            <div class="gi">
-                <p>Jiu Jitsu (Gi)</p>
+            <a class="button" href="#popup2">
+                <div class="gi" id="gi">
+                    <p>Jiu Jitsu (Gi)</p>
+                    <p>__________________</p>
+                    <br>
+                    <p>12:00 PM</p>
+                    <p>-</p>
+                    <p>1:00 PM</p>
+                </div>
+            </a>
+            <div></div>
+            <div class="no-gi">
+                <p>Jiu Jitsu (No Gi)</p>
+                <p>__________________</p>
                 <br>
                 <p>12:00 PM</p>
                 <p>-</p>
                 <p>1:00 PM</p>
             </div>
-            <div class="lkmma">
-                <p>LK MMA</p>
+            <div></div>
+            <div class="matt">
+                <p>Open Matt</p>
+                <p>__________________</p>
                 <br>
-                <p>5:30 PM</p>
+                <p>12:00 PM</p>
                 <p>-</p>
-                <p>7:15 PM</p>
+                <p>1:00 PM</p>
             </div>
-            <div class="gi">
-                <p>Jiu Jitsu (Gi)</p>
+            <div class="no-gi">
+                <p>Jiu Jitsu (No Gi)</p>
+                <p>__________________</p>
                 <br>
-                <p>7:30 PM</p>
+                <p>12:00 PM</p>
                 <p>-</p>
-                <p>9:00 PM</p>
+                <p>1:00 PM</p>
             </div>
         </div>
 
-        <div class="tuesday">
-            <div class="date">
-                <h1>Tuesday</h1>
-            </div>
+        <div class="block">
+            <div></div>
+            <div></div>
             <div class="lkmma">
                 <p>LK MMA</p>
+                <p>__________________</p>
                 <br>
                 <p>4:30 PM</p>
                 <p>-</p>
                 <p>5:45 PM</p>
             </div>
-            <div class="children">
-                <p>Jiu Jitsu Children</p>
-                <br>
-                <p>6:00 PM</p>
-                <p>-</p>
-                <p>8:50 PM</p>
-            </div>
-            <div class="Capoeira">
-                <p>Capoeira</p>
-                <br>
-                <p>7:30 PM</p>
-                <p>-</p>
-                <p>9:00 PM</p>
-            </div>
-            <div class="no-gi">
-                <p>Jiu Jitsu (No Gi)</p>
-                <br>
-                <p>7:00 PM</p>
-                <p>-</p>
-                <p>8:30 PM</p>
-            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
 
-        <div class="wednesday">
-            <div class="date">
-                <h1>Wednesday</h1>
-            </div>
-            <div class="no-gi">
-                <p>Jiu Jitsu (No Gi)</p>
-                <br>
-                <p>12:00 PM</p>
-                <p>-</p>
-                <p>1:00 PM</p>
-            </div>
+        <div class="block">
+            <div></div>
             <div class="lkmma">
                 <p>LK MMA</p>
+                <p>__________________</p>
                 <br>
                 <p>5:30 PM</p>
                 <p>-</p>
                 <p>7:15 PM</p>
             </div>
+            <div class="children">
+                <p>Jiu Jitsu Children</p>
+                <p>__________________</p>
+                <br>
+                <p>6:00 PM</p>
+                <p>-</p>
+                <p>8:50 PM</p>
+            </div>
+            <div class="lkmma">
+                <p>LK MMA</p>
+                <p>__________________</p>
+                <br>
+                <p>5:30 PM</p>
+                <p>-</p>
+                <p>7:15 PM</p>
+            </div>
+            <div class="children" id="split">
+            </div>
+            <div class="lkmma" id="split">
+            </div>
+            <div class="lkmma">
+                <p>LK MMA</p>
+                <p>__________________</p>
+                <br>
+                <p>5:30 PM</p>
+                <p>-</p>
+                <p>7:15 PM</p>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="block">
+            <div></div>
             <div class="gi">
                 <p>Jiu Jitsu (Gi)</p>
                 <br>
@@ -137,24 +161,16 @@
                 <p>-</p>
                 <p>9:00 PM</p>
             </div>
-        </div>
-        <div class="thursday">
-            <div class="date">
-                <h1>Thursday</h1>
+            <div class="Capoeira" id="split">
             </div>
-            <div class="children">
-                <p>Jiu Jitsu Children</p>
-                <br>
-                <p>6:00 PM</p>
-                <p>-</p>
-                <p>8:50 PM</p>
+            <div class="no-gi" id="split">
             </div>
-            <div class="lkmma">
-                <p>LK MMA</p>
+            <div class="gi">
+                <p>Jiu Jitsu (Gi)</p>
                 <br>
-                <p>5:30 PM</p>
+                <p>7:30 PM</p>
                 <p>-</p>
-                <p>7:00 PM</p>
+                <p>9:00 PM</p>
             </div>
             <div class="female">
                 <p>Jiu Jitsu Female</p>
@@ -163,50 +179,15 @@
                 <p>-</p>
                 <p>8:30 PM</p>
             </div>
-        </div>
-        <div class="friday">
-            <div class="date">
-                <h1>Friday</h1>
-            </div>
-            <div class="no-gi">
-                <p>Jiu Jitsu (No Gi)</p>
-                <br>
-                <p>12:00 PM</p>
-                <p>-</p>
-                <p>1:00 PM</p>
-            </div>
-            <div class="lkmma">
-                <p>LK MMA</p>
-                <br>
-                <p>5:30 PM</p>
-                <p>-</p>
-                <p>7:15 PM</p>
-            </div>
-        </div>
-        <div class="saturday">
-            <div class="date">
-                <h1>Saturday</h1>
-            </div>
-            <div class="matt">
-                <p>Open Matt</p>
-                <br>
-                <p>12:00 PM</p>
-                <p>-</p>
-                <p>1:00 PM</p>
-            </div>
+            <div></div>
+            <div></div>
         </div>
     </section>
+    .Capoeira:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    }
 
 </body>
-
-
-<br>
-
-<footer>
-    <div class="links">
-        <a href="https://www.facebook.com/lionkingsmma"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/combat_st.lo/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
 
 </html>

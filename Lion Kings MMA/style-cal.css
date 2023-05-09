@@ -87,97 +87,65 @@ nav image {
 
 
 
-/* Footer (SOCIAL MEDIA LINKS) */
-footer {
-    background-color: #737373;
+.days {
+    display: flex;
     text-align: center;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 25px;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-footer i {
-    color: white;
-    padding: 100px;
-    justify-content: space-between;
-    font-size: 25px;
-    padding: 10px;
-    padding-left: 1rem;
-}
-
-/* Footer (SOCIAL MEDIA LINKS) */
-
-#Calendar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.date {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.days div {
+    width: 150px;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 8px;
     background-color: #737373;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.date h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
 }
 
-.Capoeira,
-.gi,
-.lkmma,
-.no-gi,
-.children,
-.female,
-.matt {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+.block div {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.Capoeira p,
-.gi p,
-.lkmma p,
-.no-gi p,
-.children p,
-.female p,
-.matt p {
-    font-size: 1rem;
-    margin: 5px 0;
+.block .Capoeira {
+    background: #1E9800;
 }
 
-.Capoeira p:first-child,
-.gi p:first-child,
-.lkmma p:first-child,
-.no-gi p:first-child,
-.children p:first-child,
-.female p:first-child,
-.matt p:first-child {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.block .gi,
+.block .no-gi,
+.block .matt {
+    background: #123966;
 }
 
-.Capoeira p:last-child,
-.gi p:last-child,
-.lkmma p:last-child,
-.no-gi p:last-child,
-.children p:last-child,
-.female p:last-child,
-.matt p:last-child {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.block .lkmma {
+    background: #A60303;
+}
+
+.block .children {
+    background: #8D2BAF;
+}
+
+.block .female {
+    background: #FFC700;
+}
+
+#split {
+    width: 25px;
 }
