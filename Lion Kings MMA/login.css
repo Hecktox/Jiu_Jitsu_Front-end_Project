@@ -3,91 +3,69 @@
     padding: 0;
     font-family: 'Alegreya Sans SC', sans-serif;
     scroll-behavior: smooth;
-}
-
-/* Header (HOME AND NAV) */
-.header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    position: relative;
-}
-
-nav ul {
+    font-weight: 700;
     text-align: center;
 }
 
-nav image {
-    width: 100px;
-}
-
-.nav-links {
-    flex: 1;
-    font-weight: 600;
-}
-
-body{
-    --color-primary: #5591F5
-    --color-primary:-dark #005EFB
-    --color-secondary: #737373
-    --color-error:  #A60303
-    --color-success: #22AC00
-    --border-radius: 10px;
-
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-}
-
-.container{
-    width: 500px;
-    max-width: 500px;
-    margin: 1rem;
-    padding: 2rem; 
+.container {
+    width: 400px;
+    padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
     border-radius: 10px;
+    margin: auto;
 }
 
-.container,
-.form--input,
-.form--button {
-    font-family: 'Alegreya Sans SC', sans-serif;
+.form__button {
+    background-color: #5591F5;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    width: 390px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.form > *:first-child{
-    margin-top: 0;
-}
-
-.form > *:last-child{
-    margin-bottom: 0;
-}
-
-.form_title{
+.form__title {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.form__message{
-    text-align: center;
+.form__input-group {
     margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
-.form__message-success{
-    color: var(--color-success);
+.form__input {
+    font-family: -apple-system, sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid;
+    background-color: #f2f2f2;
+    border: none;
+    width: calc(100% - 2rem);
+    text-align: left;
 }
 
-.form__message-error{
-    color: var(--color-error);
+.form__button:hover {
+    background-color: #005EFB;
+    color: white;
+}
+
+.form__text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form__link {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.form__link:hover {
+    color: var(--color-primary-dark);
 }
