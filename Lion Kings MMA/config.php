@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "/cloudsql/lions-king:northamerica-northeast1:lions-king";
 $username = "root";
-$password = "";
-$dbname = "clients"; // replace with your database name
+$password = "SuperServer12";
+$dbname = "gym_database";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

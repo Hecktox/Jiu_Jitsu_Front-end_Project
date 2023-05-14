@@ -1,9 +1,19 @@
+
 <?php
 // Database connection settings
-$servername = "localhost";
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    // Running locally, connect with IP address
+    $servername = "34.152.10.238";
+} else {
+    // Running on the cloud, connect with /cloudsql/ path
+    $servername = "/cloudsql/lions-king:northamerica-northeast1:lions-king";
+}
 $username = "root";
-$password = "GymTest";
+$password = "SuperServer12";
 $dbname = "gym_database";
+
+// rest of your code...
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
