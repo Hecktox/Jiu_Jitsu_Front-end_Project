@@ -28,7 +28,9 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     if (password_verify($password, $row['password'])) {
         $_SESSION['user'] = $username;
-        echo "login successful";
+	  $_SESSION['user_type'] = $user_type;
+        header("Location: index.php");
+        //echo "login successful";
         //header("Location: client_dashboard.php");
     } else {
         echo "Invalid password";
@@ -42,7 +44,9 @@ if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
             $_SESSION['user'] = $username;
+		$_SESSION['user_type'] = $user_type;
             echo "login successful";
+		header("Location: index.php");
             //header("Location: admin_dashboard.php");
         } else {
             echo "Invalid password";
