@@ -105,6 +105,13 @@ nav image {
 
 /* Top to Page (BUTTON) */
 
+.block .class {
+    color: black !important;
+}
+
+.block .class h2 {
+    color: black !important;
+}
 
 
 .block {
@@ -115,6 +122,11 @@ nav image {
     font-size: 18px;
     color: white;
 }
+
+.block h2 {
+    color: black;
+}
+
 
 .block div {
     width: 500px;
