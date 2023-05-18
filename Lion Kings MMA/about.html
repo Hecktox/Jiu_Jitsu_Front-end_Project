@@ -83,8 +83,8 @@
         </div>
     </section>
 
-    <section class="info-container" id="coaches">
-        <div class="box" id="coach1">
+    <section class="info-container" id="coache1">
+        <div class="box" id="coaches">
             <div class="image-container">
                 <img src="images/home-about.jpg">
             </div>
@@ -109,9 +109,43 @@
     </section>
 
     <div class="arrow-nav">
-        <i class="fa-solid fa-caret-left fa-2xl" id="left"></i>
-        <i class="fa-solid fa-caret-right fa-2xl" id="right"></i>
+        <i class="fa-solid fa-caret-left fa-2xl" id="left-arrow" style="cursor: pointer;"></i>
+        <i class="fa-solid fa-caret-right fa-2xl" id="right-arrow" style="cursor: pointer;"></i>
     </div>
+
+    <script>
+        let crntPartner = 1; // Track the currently displayed partner
+
+        document.getElementById("right-arrow").addEventListener("click", function () {
+            const coaches = document.getElementById("coaches");
+            const coach2 = document.getElementById("coach2");
+
+            if (crntPartner === 1) {
+                coaches.classList.add("hidden");
+                coach2.classList.remove("hidden");
+                crntPartner = 2;
+            } else {
+                coach2.classList.add("hidden");
+                coaches.classList.remove("hidden");
+                crntPartner = 1;
+            }
+        });
+
+        document.getElementById("left-arrow").addEventListener("click", function () {
+            const coaches = document.getElementById("coaches");
+            const coach2 = document.getElementById("coach2");
+
+            if (crntPartner === 1) {
+                coaches.classList.add("hidden");
+                coach2.classList.remove("hidden");
+                currentPartner = 2;
+            } else {
+                coach2.classList.add("hidden");
+                coaches.classList.remove("hidden");
+                crntPartner = 1;
+            }
+        });
+    </script>
 
     <section class="info-container" id="mission">
         <div class="image-container">
@@ -164,7 +198,7 @@
         </div>
         <div class="box hidden" id="partner2">
             <div class="image-container">
-                <img src="images/tablogo.png" style="background-color: #f2f2f2;">
+                <img src="images/tablogo.png" style="background-color: #f2f2f2; ">
             </div>
             <div class="text-container">
                 <h2>Partner 2</h2>
@@ -176,9 +210,43 @@
     </section>
 
     <div class="arrow-nav">
-        <i class="fa-solid fa-caret-left fa-2xl" id="left"></i>
-        <i class="fa-solid fa-caret-right fa-2xl" id="right"></i>
+        <i class="fa-solid fa-caret-left fa-2xl" id="left" style="cursor: pointer;"></i>
+        <i class="fa-solid fa-caret-right fa-2xl" id="right" style="cursor: pointer;"></i>
     </div>
+
+    <script>
+        let currentPartner = 1; // Track the currently displayed partner
+
+        document.getElementById("right").addEventListener("click", function () {
+            const partner1 = document.getElementById("partner1");
+            const partner2 = document.getElementById("partner2");
+
+            if (currentPartner === 1) {
+                partner1.classList.add("hidden");
+                partner2.classList.remove("hidden");
+                currentPartner = 2;
+            } else {
+                partner2.classList.add("hidden");
+                partner1.classList.remove("hidden");
+                currentPartner = 1;
+            }
+        });
+
+        document.getElementById("left").addEventListener("click", function () {
+            const partner1 = document.getElementById("partner1");
+            const partner2 = document.getElementById("partner2");
+
+            if (currentPartner === 1) {
+                partner1.classList.add("hidden");
+                partner2.classList.remove("hidden");
+                currentPartner = 2;
+            } else {
+                partner2.classList.add("hidden");
+                partner1.classList.remove("hidden");
+                currentPartner = 1;
+            }
+        });
+    </script>
 
     <section class="info-container" id="why">
         <div class="text-container">
@@ -229,27 +297,3 @@
 </body>
 
 </html>
-
-<script>
-    let currentBox = 0;
-
-    document.getElementById("right").addEventListener("click", function () {
-        const boxes = document.getElementsByClassName("box");
-        const nextBox = (currentBox + 1) % boxes.length;
-
-        boxes[currentBox].classList.add("hidden");
-        boxes[nextBox].classList.remove("hidden");
-
-        currentBox = nextBox;
-    });
-
-    document.getElementById("left").addEventListener("click", function () {
-        const boxes = document.getElementsByClassName("box");
-        const prevBox = (currentBox - 1 + boxes.length) % boxes.length;
-
-        boxes[currentBox].classList.add("hidden");
-        boxes[prevBox].classList.remove("hidden");
-
-        currentBox = prevBox;
-    });
-</script>
