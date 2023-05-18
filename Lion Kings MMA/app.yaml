@@ -1,5 +1,5 @@
 runtime: php82
-entrypoint: serve index.html
+entrypoint: serve index.php
 
 instance_class: F2
 

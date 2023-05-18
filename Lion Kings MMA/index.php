@@ -21,7 +21,7 @@
             <div class="nav-links" id="navLinks">
                 <!-- <i class="fa fa-times" onclick="hideMenuBar()"></i> -->
                 <ul>
-                    <a href="index.html"> <img src="images/image.png" width="100"> </a>
+                    <a href="index.php"> <img src="images/image.png" width="100"> </a>
                     <div class="list">
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
