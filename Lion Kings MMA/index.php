@@ -27,7 +27,7 @@
                         <li><a href="contact.html">CONTACT</a></li>
                         <li><a href="class.html">CLASS</a></li>
                         <li><a href="cal.html">CALENDAR</a></li>
-            <div class="no-gi" onclick="showClass()">
+                        <li><a href="extra.html">BOOK NOW</a></li>
                         <li><a href="cart.html">CART</a></li>
                         <li><a href="login.html">ACCOUNT</a></li>
                         <?php
@@ -44,6 +44,10 @@
             <!-- <i class="fa fa-bars" onclick="showMenuBar()"></i> -->
         </nav>
         <!-- Nav Bar End -->
+        <section class="header-titles">
+            <h1 class="header-title">Welcome To Lion Kings MMA</h1>
+            <h4 class="header-subtitle">Building Community, One Roll at a Time</h4>
+        </section>
     </section>
 
     <section class="home-about">
