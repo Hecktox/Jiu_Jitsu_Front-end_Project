@@ -24,7 +24,7 @@
                         <li><a href="contact.html">CONTACT</a></li>
                         <li><a href="class.html">CLASS</a></li>
                         <li><a href="cal.html">CALENDAR</a></li>
-                        <li><a href="book.html">BOOK NOW</a></li>
+                        <li><a href="extra.html">BOOK NOW</a></li>
                         <li><a href="cart.html">CART</a></li>
                         <li><a href="login.html">ACCOUNT</a></li>
                     </div>
@@ -83,7 +83,35 @@
         </div>
     </section>
 
-    <!-- Slider To-Do -->
+    <section class="info-container" id="coaches">
+        <div class="box" id="coach1">
+            <div class="image-container">
+                <img src="images/home-about.jpg">
+            </div>
+            <div class="text-container">
+                <h2>Coach 1</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor tortor at lectus euismod
+                    vestibulum. Fusce maximus felis ac congue pretium. Aenean semper orci eu urna varius commodo.</p>
+            </div>
+        </div>
+        <div class="box hidden" id="coach2">
+            <div class="image-container">
+                <img src="images/home-about.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h2>Coach 2</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor tortor at lectus euismod
+                    vestibulum. Fusce maximus felis ac congue pretium. Aenean semper orci eu urna varius commodo.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="arrow-nav">
+        <i class="fa-solid fa-caret-left fa-2xl" id="left"></i>
+        <i class="fa-solid fa-caret-right fa-2xl" id="right"></i>
+    </div>
 
     <section class="info-container" id="mission">
         <div class="image-container">
@@ -122,7 +150,35 @@
         </div>
     </section>
 
-    <!-- Slider To-Do -->
+    <section class="info-container" id="partners">
+        <div class="box" id="partner1">
+            <div class="image-container">
+                <img src="images/tablogo.png" style="background-color: #f2f2f2;">
+            </div>
+            <div class="text-container">
+                <h2>Partner 1</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor tortor at lectus euismod
+                    vestibulum. Fusce maximus felis ac congue pretium. Aenean semper orci eu urna varius commodo.</p>
+            </div>
+        </div>
+        <div class="box hidden" id="partner2">
+            <div class="image-container">
+                <img src="images/tablogo.png" style="background-color: #f2f2f2;">
+            </div>
+            <div class="text-container">
+                <h2>Partner 2</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor tortor at lectus euismod
+                    vestibulum. Fusce maximus felis ac congue pretium. Aenean semper orci eu urna varius commodo.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="arrow-nav">
+        <i class="fa-solid fa-caret-left fa-2xl" id="left"></i>
+        <i class="fa-solid fa-caret-right fa-2xl" id="right"></i>
+    </div>
 
     <section class="info-container" id="why">
         <div class="text-container">
@@ -173,3 +229,27 @@
 </body>
 
 </html>
+
+<script>
+    let currentBox = 0;
+
+    document.getElementById("right").addEventListener("click", function () {
+        const boxes = document.getElementsByClassName("box");
+        const nextBox = (currentBox + 1) % boxes.length;
+
+        boxes[currentBox].classList.add("hidden");
+        boxes[nextBox].classList.remove("hidden");
+
+        currentBox = nextBox;
+    });
+
+    document.getElementById("left").addEventListener("click", function () {
+        const boxes = document.getElementsByClassName("box");
+        const prevBox = (currentBox - 1 + boxes.length) % boxes.length;
+
+        boxes[currentBox].classList.add("hidden");
+        boxes[prevBox].classList.remove("hidden");
+
+        currentBox = prevBox;
+    });
+</script>
