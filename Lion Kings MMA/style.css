@@ -348,5 +348,46 @@ footer i {
 #right {
     cursor: pointer;
 }
-
 /* SLIDERS (Coaches) */
+
+
+
+/* Error */
+.error {
+    background-image:url(images/background3.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+.error-text{
+    width: 88%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 25px;
+
+}
+.error-text p{
+    padding-top: 25px;
+    margin: 10px 0 40px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.error-btn{
+    display: inline-block;
+    color: #fff;
+    border: 2.5px solid #fff;
+    padding: 12px 60px;
+    font-size: 20px;
+    background: transparent;
+    font-weight: 600;
+}
+.error-btn:hover{
+    border: 2.5px solid black;
+    background-color: black;
+    transition: 1s;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}

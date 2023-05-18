@@ -137,7 +137,7 @@ nav image {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.block a{
+.block a {
     display: inline-block;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -184,6 +184,7 @@ nav image {
     cursor: pointer;
     background-color: #005EFB;
 }
+
 .apply {
     background-color: #730202;
 }
@@ -192,6 +193,116 @@ nav image {
     cursor: pointer;
     background-color: black;
 }
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8d2baf;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    width: 700px;
+    height: 896px;
+    text-align: center;
+}
+
+.popup .title,
+.description,
+.location,
+.teacher {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    width: 600px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.popup .end,
+.start {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    width: 290px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.popup .description {
+    height: 100px;
+    text-align: justify;
+    resize: none;
+}
+
+.popup img {
+    width: 390px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+.fa-regular {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.apply-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    width: 600px;
+    height: 66.86px;
+
+    background: #730202;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.apply-btn:hover {
+    background: black;
+    transition: 0.5s;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup.active {
+    display: block;
+}
+
+#overlay.active {
+    display: block;
+}
+
 
 
 

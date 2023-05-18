@@ -45,7 +45,7 @@ echo '
                         <li><a href="contact.html">CONTACT</a></li>
                         <li><a href="class.html">CLASS</a></li>
                         <li><a href="cal.html">CALENDAR</a></li>
-                        <li><a href="book.html">BOOK NOW</a></li>
+            <div class="no-gi" onclick="showClass()">
                         <li><a href="cart.html">CART</a></li>
                         <li><a href="login.html">ACCOUNT</a></li>
                         <form action="search_results.php" method="get">
