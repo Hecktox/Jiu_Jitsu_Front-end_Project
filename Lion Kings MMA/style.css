@@ -7,11 +7,15 @@
 
 /* Header (HOME AND NAV) */
 .header {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(images/home-start.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(images/home-start.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-bottom: 3vh;
 }
 
 nav {
@@ -27,8 +31,10 @@ nav ul {
     text-align: center;
 }
 
-nav image {
-    width: 100px;
+nav img {
+    max-width: 100px;
+    width: auto;
+    height: auto;
 }
 
 .nav-links {
@@ -61,7 +67,31 @@ nav image {
 
 .nav-links ul li:hover::after {
     width: 100%;
-    transition: 0.1s;
+    transition: 0.15s;
+}
+
+.header-titles {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14vh;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 95px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 38px;
+    color: white;
+    margin: 0;
+    font-weight: normal;
 }
 
 .text-box {
@@ -225,6 +255,7 @@ nav image {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+
 /* Top to Page (BUTTON) */
 
 
@@ -348,33 +379,37 @@ footer i {
 #right {
     cursor: pointer;
 }
+
 /* SLIDERS (Coaches) */
 
 
 
 /* Error */
 .error {
-    background-image:url(images/background3.jpg);
+    background-image: url(images/background3.jpg);
     min-height: 100vh;
     background-size: cover;
 }
-.error-text{
+
+.error-text {
     width: 88%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     font-size: 25px;
 
 }
-.error-text p{
+
+.error-text p {
     padding-top: 25px;
     margin: 10px 0 40px;
     font-size: 25px;
     font-weight: 300;
 }
-.error-btn{
+
+.error-btn {
     display: inline-block;
     color: #fff;
     border: 2.5px solid #fff;
@@ -383,7 +418,8 @@ footer i {
     background: transparent;
     font-weight: 600;
 }
-.error-btn:hover{
+
+.error-btn:hover {
     border: 2.5px solid black;
     background-color: black;
     transition: 1s;
